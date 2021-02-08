@@ -41,9 +41,9 @@ class Ui_MainWindow(object):
         self.entry_field = QtWidgets.QLineEdit(self.centralwidget)
         self.entry_field.setGeometry(QtCore.QRect(20, 130, 761, 71))
         self.entry_field.setObjectName("entry_field")
-        self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
-        self.checkBox.setGeometry(QtCore.QRect(530, 230, 101, 26))
-        self.checkBox.setObjectName("checkBox")
+        # self.checkBox = QtWidgets.QCheckBox(self.centralwidget)
+        # self.checkBox.setGeometry(QtCore.QRect(530, 230, 101, 26))
+        # self.checkBox.setObjectName("checkBox")
         self.download_mp3 = QtWidgets.QPushButton(self.centralwidget)
         self.download_mp3.setGeometry(QtCore.QRect(640, 230, 121, 30))
         self.download_mp3.setObjectName("download_mp3")
@@ -54,8 +54,11 @@ class Ui_MainWindow(object):
         self.destimation_btn = QtWidgets.QCommandLinkButton(self.centralwidget)
         self.destimation_btn.setGeometry(QtCore.QRect(30, 360, 172, 41))
         self.destimation_btn.setObjectName("destimation_btn")
-        MainWindow.setCentralWidget(self.centralwidget)
 
+        self.retype = QtWidgets.QCommandLinkButton(self.centralwidget)
+        self.retype.setGeometry(QtCore.QRect(630, 360, 172, 41))
+        self.retype.setObjectName("retype")
+        MainWindow.setCentralWidget(self.centralwidget)
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
@@ -65,10 +68,10 @@ class Ui_MainWindow(object):
         self.title.setText(_translate("MainWindow", "Adithyans Youtube Video Downloader"))
         self.sub_title.setText(_translate("MainWindow", "Fastest Downloader Ever"))
         self.entry_field.setPlaceholderText(_translate("MainWindow", "ENTER THE URL OF THE YOUTUBE VIDEO THAT YOU WANT TO DOWNLOAD"))
-        self.checkBox.setText(_translate("MainWindow", "CheckBox"))
+        # self.checkBox.setText(_translate("MainWindow", "Close After Downloading"))
         self.download_mp3.setText(_translate("MainWindow", "Download MP3"))
         self.download_video_btn.setText(_translate("MainWindow", "Download MP4"))
-        self.destimation_btn.setText(_translate("MainWindow", "Choose Destination"))
-
+        self.destimation_btn.setText(_translate("MainWindow", "See Downloads"))
+        self.retype.setText(_translate("MainWindow", "Re-enter Last URL"))
 
 
