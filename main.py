@@ -6,8 +6,9 @@ from pytube import YouTube
 from PyQt5.QtWidgets import *
 from PyQt5 import QtWidgets
 from app.gui import Ui_MainWindow
+from windows.windows_os import Windows
 
-
+windows = Windows
 class Main(QMainWindow):
     def __init__(self, usr_data):
         super().__init__()
@@ -17,6 +18,7 @@ class Main(QMainWindow):
         self.ui.download_video_btn.clicked.connect(self.video_download)
         self.ui.download_mp3.clicked.connect(self.audio_download)
         self.ui.destimation_btn.clicked.connect(self.show_downloads)
+        windows.load_gui_change(self)
         self.show()
 
     def video_download(self):

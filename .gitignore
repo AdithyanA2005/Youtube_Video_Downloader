@@ -1,5 +1,4 @@
-.idea/ 
-venv/ 
+venv/
 utils/__pycache__/ 
 app/__pycache__/
 yt/
