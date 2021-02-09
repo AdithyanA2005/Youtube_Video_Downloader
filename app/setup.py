@@ -10,7 +10,7 @@ def setup_os(data_dict):
     osname = platform.system()
     if osname == "Windows":  # For Windows
         data_dict['cmd'] = 'explorer '
-        data_dict['loc'] = ''
+        data_dict['loc'] = 'C:\\Users\\deepa\\Videos\\Youtube_Video_Downloader'
     elif osname == "Linux":  # For Linux
         data_dict['cmd'] = 'xdg-open '
         data_dict['loc'] = '/home/garuda/Videos/Youtube_Video_Downloader/'
