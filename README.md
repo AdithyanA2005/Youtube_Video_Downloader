@@ -10,32 +10,34 @@ This repository contain the code for a Youtube Video Downloader which was create
 > This Youtube Downloader is created by [Adithyan A](https://github.com/adithyana2005/)
 
 ***
-> In this repository the main runnable file that is needed to be runned is [main.py](https://github.com/AdithyanA2005/Youtube_Video_Downloader/blob/main/main.py) \
-> In the same location you can find:
-> -     gitigonore           - These contain the files that are to be ignored by git
-> -     readme.md            - This is for the readme in github
-> -     requirements.txt     - These are the requirements which will be installed by you
-> -     Install requirements : pip install -r requirements.txt
-> -     Run alpha with gui   : python main.py
-> -     Run alpha in cmd     : python cmd_alpha.py
->
+> Install Repository
+> ```bash
+> cd Your/Project/Folder
+> git clone https://github.com/AdithyanA2005/Youtube_Video_Downloader.git
+> ```
 
 ***
-``````
-
-
-
-> The name for this AI is A.L.P.H.A
+> Running in Linux (Acrch => Garuda)
+> ```bash
+> cd Your\Project\Folder\Youtube_Video_Downloader
+> pip install -r requirements.txt
+> python main.py OR ./app.sh
 > ```
->  A ->  Adithyan's
->  L ->  Loveable
->  P ->  Premium
->  H ->  Hyper
->  A ->  Artificial Inteligence
+
+***
+> Running on Windows 
+> ```bash
+> cd Your\Project\Folder\Youtube_Video_Downloader
+> pip install -r requirements.txt
+> python main.py
 > ```
----
->What is ALPHA?
->
-> This is a Assistant made in python, This is capable of doing many things that you can't even imagine
->
-> ```git clone https://github.com/AdithyanA2005/AI_ALPHA.git```
+
+***
+> Running in Linux(Debian => Ubuntu)
+> ```bash
+> cd Your\Project\Folder\Youtube_Video_Downloader
+> pip3 install -r requirements.txt
+> python3 main.py OR ./app.sh
+> ```
+
+***
