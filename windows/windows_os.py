@@ -11,15 +11,18 @@ class Windows(QMainWindow):
         super().__init__()
         self.ui = Ui_MainWindow()
 
-    def load_gui_change(self):
-        self.ui.download_mp3.setStyleSheet("background-color: #0b78a3;")
-        self.ui.download_mp3.setGeometry(QtCore.QRect(640, 230, 140, 40))            
-        self.ui.download_video_btn.setStyleSheet("background-color: #0b78a3;")   
-        self.ui.download_video_btn.setGeometry(QtCore.QRect(20, 230, 140, 40))                 
-        self.ui.title.setStyleSheet("background-color: #0b78a3; color: white;")
+    def load_gui_change(self): 
+        self.ui.download_mp3.setStyleSheet("background-color: #17a2b8; color :white;")
+        self.ui.download_mp3.setGeometry(QtCore.QRect(640, 260, 140, 40))            
+        self.ui.download_video_btn.setStyleSheet("background-color: #17a2b8; color :white")   
+        self.ui.download_video_btn.setGeometry(QtCore.QRect(20, 260, 140, 40)) 
+        self.ui.title.setStyleSheet(" color: #6c757d;")     
         self.ui.sub_title.setStyleSheet("color: #2a5c49")
-        self.ui.retype.setGeometry(QtCore.QRect(600, 360, 180, 40))  
-        # self.ui.MainWindow.setStyleSheet("background-color: #494a59;")
+        self.ui.sub_title.setGeometry(QtCore.QRect(50, 40, 340, 40))
+        self.ui.entry_field.setStyleSheet("color:white;")
+        self.ui.clear_entry.setGeometry(QtCore.QRect(600, 360, 180, 40))  
+        self.ui.clear_entry.setStyleSheet("background-color: #6c757d; color: white;")
+        self.ui.destimation_btn.setStyleSheet("background-color: #6c757d; color: white;")
         font = QtGui.QFont()
         font.setBold(True)
         font.setItalic(True)
@@ -29,21 +32,4 @@ class Windows(QMainWindow):
         font.setPointSize(13)
         self.ui.sub_title.setFont(font)
         font.setPointSize(10)
-        self.ui.download_mp3.setFont(font)
-        self.ui.download_video_btn.setFont(font)
-        self.ui.destimation_btn.setFont(font)        
-        self.ui.retype.setFont(font)
-        
-
-
-
-
-
-
-
-if __name__ == '__main__':
-    app = QtWidgets.QApplication(sys.argv)
-    alpha = Windows()
-    alpha.show()
-    sys.exit(app.exec_())
     
