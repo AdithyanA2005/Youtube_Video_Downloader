@@ -15,6 +15,8 @@ class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
         MainWindow.resize(800, 500)
+        MainWindow.setWindowIcon(QtGui.QIcon('utils\\images\\logo.png'))
+        MainWindow.setStyleSheet("background-color: #183153;")  
         font = QtGui.QFont()
         font.setPointSize(12)
         font.setBold(True)
@@ -55,9 +57,9 @@ class Ui_MainWindow(object):
         self.destimation_btn.setGeometry(QtCore.QRect(30, 360, 172, 41))
         self.destimation_btn.setObjectName("destimation_btn")
 
-        self.retype = QtWidgets.QCommandLinkButton(self.centralwidget)
-        self.retype.setGeometry(QtCore.QRect(630, 360, 172, 41))
-        self.retype.setObjectName("retype")
+        self.clear_entry = QtWidgets.QCommandLinkButton(self.centralwidget)
+        self.clear_entry.setGeometry(QtCore.QRect(630, 360, 172, 41))
+        self.clear_entry.setObjectName("clear_entry")
         MainWindow.setCentralWidget(self.centralwidget)
         self.retranslateUi(MainWindow)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
@@ -72,6 +74,6 @@ class Ui_MainWindow(object):
         self.download_mp3.setText(_translate("MainWindow", "Download MP3"))
         self.download_video_btn.setText(_translate("MainWindow", "Download MP4"))
         self.destimation_btn.setText(_translate("MainWindow", "See Downloads"))
-        self.retype.setText(_translate("MainWindow", "Re-enter Last URL"))
+        self.clear_entry.setText(_translate("MainWindow", "Clear Entry Field"))
 
 
