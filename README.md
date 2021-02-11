@@ -29,7 +29,7 @@ This repository contain the code for a Youtube Video Downloader which was create
 > ```bash
 > cd Your\Project\Folder\Youtube_Video_Downloader
 > pip install -r requirements.txt
-> python main.py
+> python main.py OR .\app.ps1
 > ```
 
 ***
