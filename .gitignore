@@ -3,3 +3,5 @@ utils/__pycache__/
 app/__pycache__/
 windows/__pycache__/
 yt/
+app.sh
+app.ps1
