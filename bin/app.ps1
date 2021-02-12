@@ -1,8 +1,8 @@
 echo "Hello Adithyan Welcome Back"
-printf "\n"
+echo "\n"
 
 echo "Going to your project section"
-echo "cd C:\Users\deepa\Documents\Coding\Python\Projects\Youtube_Video_Downloader"
+echo "cd 'C:\Users\deepa\Documents\Coding\Python\Projects\Youtube_Video_Downloader'"
 cd C:\Users\deepa\Documents\Coding\Python\Projects\Youtube_Video_Downloader
 
 echo "Adithyan This is the list of files in the poject"
